@@ -53,7 +53,7 @@ In current example we will learn how to set up IBC relayer between two cosmos ch
      PORTGAIA=RPC port of your GAIA node #10004 or 26657 if the nodes are on different servers
 ```
 
-# Next - To add the chain config files manually
+# Next - to add the chain config files manually
 ```
 $ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/GAIA_config.json gaia
 $ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/STRIDE-TESTNET-2_config.json stride

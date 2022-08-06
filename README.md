@@ -1,4 +1,4 @@
-# In current manual we will learn how to set up IBC relayer between two cosmos chains
+## In current manual we will learn how to set up IBC relayer between two cosmos chains
 
 Using the example of installing and running Relayer-v2.0.0
 

@@ -195,6 +195,6 @@ EOF
      sudo systemctl restart rlyd && journalctl -fu rlyd -o cat
 ```
 ## The following logs will indicate the successful completion of setting up Relayer_v2.0.0:
-<a href='https://postimg.cc/R3wCKC7X' target='_blank'><img src='https://i.postimg.cc/R3wCKC7X/archebald.jpg' border='0' alt='archebald'/></a>
+<a href='https://postimg.cc/XBGzBqFv' target='_blank'><img src='https://i.postimg.cc/XBGzBqFv/logs-relayer-v2.jpg' border='0' alt='logs-relayer-v2'/></a>
 
 Thanks to goooodnes#8929 and Zuka#5870 for the inspiration for this guide.

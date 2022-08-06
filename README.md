@@ -11,7 +11,7 @@ In current example we will learn how to set up IBC relayer between two cosmos ch
 ```
      sudo apt install wget git make htop unzip -y
 ```
-## Install GO 1.18.3 | ONE COMMAND
+## Install Go 1.18.3
 ```
      cd $HOME && \
      ver="1.18.3" && \
@@ -47,13 +47,13 @@ In current example we will learn how to set up IBC relayer between two cosmos ch
      KEYGAIA=Name of your key
      
      IPSTRIDE=IP your STRIDE node #164.68.125.90
-     PORTSTRIDE=Port RPC your STRIDE node #10002
+     PORTSTRIDE=Port RPC your STRIDE node #10002 or 26657 if the nodes are on different servers
 
      IPGAIA=IP you GAIA node #164.68.125.90
-     PORTGAIA=RPC port of your GAIA node #10004
+     PORTGAIA=RPC port of your GAIA node #10004 or 26657 if the nodes are on different servers
 ```
 
-# NEXT - To add the chain config files manually
+# Next - To add the chain config files manually
 ```
 $ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/GAIA_config.json gaia
 $ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/STRIDE-TESTNET-2_config.json stride
@@ -62,7 +62,7 @@ after which you need to make changes in the configuration file
 ```nano /root/.relaer/config/config.json```
 and replace rpc-addr with your knowledge
 
-# OR NEXT - COPY ALL ONE COMAND TO TERMINAL
+# Or  - copy all one comand to terminal
 ```
 
 sudo tee $HOME/.relayer/config/config.yaml > /dev/null <<EOF
@@ -157,7 +157,7 @@ Type=simple
 User=$USER
 ExecStart=$(which rly) start gaia-stride --log-format logfmt --processor events
 Restart=on-failure
-RestartSec=10
+RestartSec=3
 LimitNOFILE=4096
 [Install]
 WantedBy=multi-user.target
@@ -168,7 +168,7 @@ EOF
 ```
      sudo systemctl daemon-reload
      sudo systemctl enable rlyd
-     sudo systemctl restart rlyd && journalctl -u rlyd -f
+     sudo systemctl restart rlyd && journalctl -fu rlyd -o cat
 ```
 
 (This guide was created in collaboration with goooodnes#8929 and Zuka#5870)

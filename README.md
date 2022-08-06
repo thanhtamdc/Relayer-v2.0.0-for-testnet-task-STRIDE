@@ -196,5 +196,4 @@ EOF
 ```
 
 
-Thanks to goooodnes#8929 and Zuka#5870 for helping me create this guide
-<br>
+Thanks to goooodnes#8929 and Zuka#5870 for the inspiration for this guide.

@@ -195,6 +195,6 @@ EOF
      sudo systemctl restart rlyd && journalctl -fu rlyd -o cat
 ```
 ## The following logs will indicate the successful completion of setting up Relayer_v2.0.0:
-[url=https://postimages.org/][img]https://i.postimg.cc/k5pVrBB3/archebald.jpg[/img][/url]
+<a href='https://postimg.cc/R3wCKC7X' target='_blank'><img src='https://i.postimg.cc/R3wCKC7X/archebald.jpg' border='0' alt='archebald'/></a>
 
 Thanks to goooodnes#8929 and Zuka#5870 for the inspiration for this guide.

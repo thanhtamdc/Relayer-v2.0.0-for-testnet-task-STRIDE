@@ -1,6 +1,4 @@
 # Set up a v2.0.0
-(This guide was created in collaboration with goooodnes#8929 and Zuka#5870)
-<br>
 
 In current example we will learn how to set up IBC relayer between two cosmos chains
 
@@ -172,3 +170,6 @@ EOF
      sudo systemctl enable rlyd
      sudo systemctl restart rlyd && journalctl -u rlyd -f
 ```
+
+(This guide was created in collaboration with goooodnes#8929 and Zuka#5870)
+<br>

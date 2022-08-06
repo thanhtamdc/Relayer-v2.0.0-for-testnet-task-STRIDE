@@ -1,6 +1,6 @@
-# Set up a v2.0.0
+# In current manual we will learn how to set up IBC relayer between two cosmos chains
 
-In current example we will learn how to set up IBC relayer between two cosmos chains
+On the example of installing Relayer-v2.0.0
 
 ## Update system
 ```

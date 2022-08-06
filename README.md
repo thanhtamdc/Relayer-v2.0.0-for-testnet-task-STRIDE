@@ -172,5 +172,5 @@ EOF
 ```
 
 
-Thanks to goooodnes#8929 and Zuka#5870 for creating this guide
+Thanks to goooodnes#8929 and Zuka#5870 for helping me create this guide
 <br>

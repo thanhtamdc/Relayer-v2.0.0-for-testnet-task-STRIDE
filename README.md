@@ -171,5 +171,6 @@ EOF
      sudo systemctl restart rlyd && journalctl -fu rlyd -o cat
 ```
 
-(This guide was created in collaboration with goooodnes#8929 and Zuka#5870)
+
+Thanks to goooodnes#8929 and Zuka#5870 for creating this guide
 <br>

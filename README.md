@@ -151,7 +151,7 @@ EOF
 ```
 ## Check path is correct
    ```
-   rly chains list
+   rly paths list
    ```
 ## Successful output:
 ```

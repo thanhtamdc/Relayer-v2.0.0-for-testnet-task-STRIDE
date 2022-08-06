@@ -53,7 +53,7 @@ Using the example of installing and running Relayer-v2.0.0
      PORTGAIA=RPC port of your GAIA node #10004 or 26657 if the nodes are on different servers
 ```
 
-## Next - to add the chain config files manually
+# Next - to add the chain config files manually
 ```
 $ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/GAIA_config.json gaia
 $ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/STRIDE-TESTNET-2_config.json stride
@@ -197,4 +197,4 @@ EOF
 # The following logs will indicate the successful completion of setting up Relayer_v2.0.0:
 <a href='https://postimg.cc/XBGzBqFv' target='_blank'><img src='https://i.postimg.cc/XBGzBqFv/logs-relayer-v2.jpg' border='0' alt='logs-relayer-v2'/></a>
 
-Thanks to goooodnes#8929 and Zuka#5870 for the inspiration for this guide.
+# Thanks to goooodnes#8929 and Zuka#5870 for the inspiration for this guide.

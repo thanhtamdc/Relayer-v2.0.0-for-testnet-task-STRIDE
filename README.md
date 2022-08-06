@@ -140,11 +140,35 @@ paths:
 EOF
 ```
 
+## Check chains added to relayer
+   ```
+   rly chains list
+   ```
+## Successful output:
+```
+ 1: STRIDE-TESTNET-2     -> type(cosmos) key(✔) bal(✔) path(✔)
+ 2: GAIA                 -> type(cosmos) key(✔) bal(✔) path(✔)
+```
+## Check path is correct
+   ```
+   rly chains list
+   ```
+## Successful output:
+```
+0: gaia-stride          -> chns(✔) clnts(✔) conn(✔) (GAIA<>STRIDE-TESTNET-2)
+```
+
 ## Import  keys for the relayer to use when signing and relaying transactions
    ```
      rly keys restore stride $KEYSTRIDE "mnemonic words here"
      rly keys restore gaia $KEYGAIA "mnemonic words here"
    ```
+## Check wallet balance
+```
+rly q balance stride
+rly q balance gaia
+```
+   
 ## Create go-v2 relayer service file
  (copy and paste into the terminal with one command)
 ```

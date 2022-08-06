@@ -1,17 +1,17 @@
-## In current manual we will learn how to set up IBC relayer between two cosmos chains
+# In current manual we will learn how to set up IBC relayer between two cosmos chains
 
 Using the example of installing and running Relayer-v2.0.0
 
-## Update system
+# Update system
 ```
      sudo apt update && sudo apt upgrade -y
 ```
 
-## Install dependencies
+# Install dependencies
 ```
      sudo apt install wget git make htop unzip -y
 ```
-## Install Go 1.18.3
+# Install Go 1.18.3
 ```
      cd $HOME && \
      ver="1.18.3" && \
@@ -23,20 +23,20 @@ Using the example of installing and running Relayer-v2.0.0
      source $HOME/.bash_profile && \
      go version
 ```
-## Make relayer home dir
+# Make relayer home dir
 ```
      cd $HOME
      mkdir -p $HOME/.relayer/config
 ```
 
-## Download go-v2 relayer
+# Download go-v2 relayer
 ```
      git clone https://github.com/cosmos/relayer.git
      cd relayer && git checkout v2.0.0
      make install
  
 ```
-## Make you own config for Relayer v2
+# Make you own config for Relayer v2
 ```
      cd $HOME
      mkdir -p $HOME/.relayer/config
@@ -53,7 +53,7 @@ Using the example of installing and running Relayer-v2.0.0
      PORTGAIA=RPC port of your GAIA node #10004 or 26657 if the nodes are on different servers
 ```
 
-# Next - to add the chain config files manually
+## Next - to add the chain config files manually
 ```
 $ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/GAIA_config.json gaia
 $ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/STRIDE-TESTNET-2_config.json stride
@@ -140,36 +140,36 @@ paths:
 EOF
 ```
 
-## Check chains added to relayer
+# Check chains added to relayer
    ```
    rly chains list
    ```
-## Successful output:
+# Successful output:
 ```
  1: STRIDE-TESTNET-2     -> type(cosmos) key(✔) bal(✔) path(✔)
  2: GAIA                 -> type(cosmos) key(✔) bal(✔) path(✔)
 ```
-## Check path is correct
+# Check path is correct
    ```
    rly paths list
    ```
-## Successful output:
+# Successful output:
 ```
 0: gaia-stride          -> chns(✔) clnts(✔) conn(✔) (GAIA<>STRIDE-TESTNET-2)
 ```
 
-## Import  keys for the relayer to use when signing and relaying transactions
+# Import  keys for the relayer to use when signing and relaying transactions
    ```
      rly keys restore stride $KEYSTRIDE "mnemonic words here"
      rly keys restore gaia $KEYGAIA "mnemonic words here"
    ```
-## Check wallet balance
+# Check wallet balance
 ```
 rly q balance stride
 rly q balance gaia
 ```
    
-## Create go-v2 relayer service file
+# Create go-v2 relayer service file
  (copy and paste into the terminal with one command)
 ```
 sudo tee /etc/systemd/system/rlyd.service > /dev/null <<EOF
@@ -188,13 +188,13 @@ WantedBy=multi-user.target
 EOF
 ```
 
-## Start service
+# Start service
 ```
      sudo systemctl daemon-reload
      sudo systemctl enable rlyd
      sudo systemctl restart rlyd && journalctl -fu rlyd -o cat
 ```
-## The following logs will indicate the successful completion of setting up Relayer_v2.0.0:
+# The following logs will indicate the successful completion of setting up Relayer_v2.0.0:
 <a href='https://postimg.cc/XBGzBqFv' target='_blank'><img src='https://i.postimg.cc/XBGzBqFv/logs-relayer-v2.jpg' border='0' alt='logs-relayer-v2'/></a>
 
 Thanks to goooodnes#8929 and Zuka#5870 for the inspiration for this guide.

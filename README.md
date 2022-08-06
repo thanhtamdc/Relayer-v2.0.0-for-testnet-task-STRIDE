@@ -57,7 +57,7 @@ In current example we will learn how to set up IBC relayer between two cosmos ch
 
 # NEXT - To add the chain config files manually
 ```
-$ rly chains add --url [https://raw.githubusercontent.com/cosmos/relayer/main/docs/example-configs/cosmoshub-4.json](https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/GAIA_config.json) gaia
+$ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/GAIA_config.json gaia
 $ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/STRIDE-TESTNET-2_config.json stride
 ```
 after which you need to make changes in the configuration file

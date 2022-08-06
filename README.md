@@ -59,7 +59,7 @@ $ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b
 $ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/STRIDE-TESTNET-2_config.json stride
 ```
 after which you need to make changes in the configuration file
-```nano /root/.relaer/config/config.json```
+```nano /root/.relayer/config/config.yaml```
 and replace rpc-addr with your knowledge
 
 # Or  - copy all one comand to terminal

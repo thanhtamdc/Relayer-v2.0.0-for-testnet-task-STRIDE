@@ -64,7 +64,7 @@ after which you need to make changes in the configuration file
 ```nano /root/.relaer/config/config.json```
 and replace rpc-addr with your knowledge
 
-# NEXT - COPY ALL ONE COMAND TO TERMINAL
+# OR NEXT - COPY ALL ONE COMAND TO TERMINAL
 ```
 
 sudo tee $HOME/.relayer/config/config.yaml > /dev/null <<EOF

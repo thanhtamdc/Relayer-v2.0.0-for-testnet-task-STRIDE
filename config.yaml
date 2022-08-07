@@ -1,7 +1,7 @@
 global:
     api-listen-addr: :5183
     timeout: 1m
-    memo: archebald#2945
+    memo: sunnyduong#3509
     light-cache-size: 20
 chains:
     gaia:
@@ -26,7 +26,7 @@ chains:
         value:
             key: KEYSTRIDE
             chain-id: STRIDE-TESTNET-2
-            rpc-addr: http://164.68.125.90:10002
+            rpc-addr: http://127.0.0.1:26657
             account-prefix: stride
             keyring-backend: test
             gas-adjustment: 1.5

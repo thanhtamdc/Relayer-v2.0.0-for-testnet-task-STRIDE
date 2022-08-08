@@ -47,16 +47,16 @@ Using the example of installing and running Relayer-v2.0.0
      KEYGAIA=Name of your key
      
      IPSTRIDE=IP your STRIDE node #127.0.0.1
-     PORTSTRIDE=Port RPC your STRIDE node #10002 or 26657 if the nodes are on different servers
+     PORTSTRIDE=Port RPC your STRIDE node #16657 or 26657 if the nodes are on different servers
 
      IPGAIA=IP you GAIA node #127.0.0.1
-     PORTGAIA=RPC port of your GAIA node #10004 or 26657 if the nodes are on different servers
+     PORTGAIA=RPC port of your GAIA node #23657 or 26657 if the nodes are on different servers
 ```
 
 # Next - to add the chain config files manually
 ```
-$ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/GAIA_config.json gaia
-$ rly chains add --url https://gist.githubusercontent.com/Archebald-now/3aef116b9dd67009600d8da1746dfe1f/raw/06f7e8959d5d9735576867ae723ca5c35f485aed/STRIDE-TESTNET-2_config.json stride
+$ rly chains add --url https://github.com/thanhtamdc/Relayer-v2.0.0-for-testnet-task-STRIDE/raw/main/config_chain_gaia.json gaia
+$ rly chains add --url https://github.com/thanhtamdc/Relayer-v2.0.0-for-testnet-task-STRIDE/raw/main/config_chain_stride.json stride
 ```
 after which you need to make changes in the configuration file
 ```nano /root/.relayer/config/config.yaml```

@@ -3,7 +3,7 @@
   "value": {
     "key": "KEYSTRIDE",
     "chain-id": "STRIDE-TESTNET-2",
-    "rpc-addr": "http://164.68.125.90:10002",
+    "rpc-addr": "http://127.0.0.1:16657",
     "account-prefix": "stride",
     "keyring-backend": "test",
     "gas-adjustment": 1.5,
